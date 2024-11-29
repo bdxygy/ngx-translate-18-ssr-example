@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --port 7676",
+    "build": "ng build --base-href /ng-18-ssr-meta/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:ng-18-ssr-meta": "node dist/ng-18-ssr-meta/server/server.mjs"
@@ -30,6 +30,8 @@
     "@angular-devkit/build-angular": "^18.2.12",
     "@angular/cli": "^18.2.12",
     "@angular/compiler-cli": "^18.2.0",
+    "@ngx-translate/core": "^16.0.3",
+    "@ngx-translate/http-loader": "^16.0.0",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
